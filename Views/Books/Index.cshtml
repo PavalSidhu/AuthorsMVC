@@ -1,0 +1,23 @@
+﻿@model Assignment1.Models.Books
+@{
+    ViewData["Title"] = "Titles";
+}
+
+<h1>@ViewBag.title</h1>
+
+<table class="table">
+    @foreach(var item in Model.items)
+    {    
+        <tbody>
+        <tr>
+            <td>
+            <a asp-controller="Books"
+               asp-action="Details"
+               asp-route-id="@item.id">
+                @Html.DisplayFor(modelItem => item.volumeInfo.title)
+            </a>
+            </td>
+        </tr>
+        </tbody>
+    }   
+</table>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzuMBL3vyfkqRynTWoWX7UgAAAAACAAAAAAAQZgAAAAEAACAAAADVyvTgGPIY1gLB7RNDWTkGIjiVXH04ULrvjljxvS8G0QAAAAAOgAAAAAIAACAAAABKSNsPdEq8DolZHlIpQrljLX6rzeKFDP56+xphlh2GqoAAAADRdJm1z1BM87dVt2ZO2T8949kBB5EukY5ssW7K9Nb47aTGC+opW8Qzq6rfNkuJCHI8Vp8hr85J/ZemZ72IcKNVJSwVB0GJEv4pS0tOoNw5+kgRW+YZEqxmd+ONWLxfXM0BgumWCgU2oxKEYO4+Hm1HpVzRHRvnBBfYOQcJCuBL70AAAACUjqNZq2L1MWTgm2ju8pCoKICmv3zM21hzYcC/eYuVfONulxg1nc1JFXaNxdinAL+4JXt+XxYdWS7MNol48QjS</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:pavalharrypotterdbserver.database.windows.net,1433%3bInitial Catalog=pavalharrypotter_db%3bUser Id=paval%40pavalharrypotterdbserver%3bPassword=P%40%24%24W0rd</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Assignment1.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:pavalharrypotterdbserver.database.windows.net,1433%3bInitial Catalog=pavalharrypotter_db%3bUser Id=paval%40pavalharrypotterdbserver%3bPassword=P%40%24%24W0rd</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+﻿@model Assignment1.Models.Book
+@{
+    ViewData["Title"] = "Details";
+    string s = "";
+    for(int i = 0; i < 2; i++)
+    {
+        if(Model.volumeInfo.industryIdentifiers[i].type == "ISBN_10")
+        {
+            s = Model.volumeInfo.industryIdentifiers[i].identifier;
+        }
+    }
+}
+
+
+<h1>@ViewBag.Title</h1>
+
+<img src="@Model.volumeInfo.imageLinks.smallThumbnail"/>
+</br>
+
+@Model.volumeInfo.title
+</br>
+@foreach (var item in Model.volumeInfo.authors) {
+    @item<span>, </span>
+}
+</br>
+@Model.volumeInfo.publisher
+</br>
+@Model.volumeInfo.publishedDate
+</br>
+@Model.volumeInfo.description
+</br>
+@s
+
